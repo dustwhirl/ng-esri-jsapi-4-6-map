@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  mapProperties: __esri.MapProperties = {
+    basemap: 'topo'
+  };
+  mapViewProperties: __esri.MapViewProperties = {
+    center: [-74.25, 43],
+    zoom: 13
+  };
 }

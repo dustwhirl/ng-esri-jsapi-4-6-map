@@ -1,0 +1,1 @@
+export * from './src/app/modules/map/map.module'
