@@ -30,19 +30,16 @@ export class MapService {
         __esri.MapConstructor,
         __esri.MapViewConstructor
       ]) => {
-        let map = new Map(mapProperties);
+        this.map = new Map(mapProperties);
 
         if (!mapViewProperties.container) mapViewProperties.container = el.nativeElement.id;
-        if (!mapViewProperties.map) mapViewProperties.map = map;
+        if (!mapViewProperties.map) mapViewProperties.map = this.map;
 
-        let mapView = new MapView(mapViewProperties);
-
-        this.map = map;
-        this.mapView = mapView;
+        this.mapView = new MapView(mapViewProperties);
 
         return {
-          map: map,
-          mapView: mapView
+          map: this.map,
+          mapView: this.mapView
         };
       });
     });

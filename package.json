@@ -1,6 +1,6 @@
 {
-  "name": "ng-esri-map4x",
-  "version": "0.0.0",
+  "name": "ng-esri-jsapi-map",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",

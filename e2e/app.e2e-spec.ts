@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('ng-esri-map4x App', () => {
+describe('ng-esri-jsapi-map App', () => {
   let page: AppPage;
 
   beforeEach(() => {
